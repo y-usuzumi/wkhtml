@@ -1,0 +1,15 @@
+[package]
+name = "wkhtml-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+seq-macro = "0.3"
+html-macro = { path = "html-macro" }
+virtual-node = { path = "virtual-node" }
+wkhtml-rs-render = { path = "wkhtml-rs-render" }
+
+[workspace]
+members = ['html-macro', 'virtual-node', 'html-validation', 'wkhtml-rs-render']
